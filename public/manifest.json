@@ -1,0 +1,21 @@
+{
+  "name": "BDA Baudesign Akustik GmbH",
+  "short_name": "BDA",
+  "description": "Ihr zertifizierter Fachbetrieb für Akustik, Fassaden, WDVS und Innenausbau in Recklinghausen.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#D32F2F",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

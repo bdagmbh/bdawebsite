@@ -1,0 +1,377 @@
+---
+import Layout from '../layouts/Layout.astro';
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BDA Baudesign Akustik GmbH",
+  "description": "Ihr zertifizierter Fachbetrieb für Akustik, Fassaden, WDVS und Innenausbau in Recklinghausen.",
+  "url": "https://bda-baudesign-akustik.de",
+  "telephone": ["+4923619994017", "+491724193175"],
+  "email": "baudesign.akustik@web.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bochumer Straße 207",
+    "addressLocality": "Recklinghausen",
+    "postalCode": "45661",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.6131,
+    "longitude": 7.1936
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "€€",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.6131,
+      "longitude": 7.1936
+    },
+    "geoRadius": "50000"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Baustoffe und Dienstleistungen",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Akustikbau" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fassadenarbeiten" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Malerarbeiten" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WDVS" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Abbrucharbeiten" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Galabau" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fliesenarbeiten" } }
+    ]
+  }
+};
+---
+
+<Layout 
+  title="BDA Baudesign Akustik GmbH - Ihr Partner am Bau" 
+  description="Premium-Qualität in Akustikbau, Fassadengestaltung und Wärmedämmung in Recklinghausen und im Ruhrgebiet."
+  image="/images/hero.jpg"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+  
+  <!-- Sektion 1: Hero-Bereich -->
+  <section class="relative min-h-screen flex items-center justify-center bg-secondary text-surface overflow-hidden" aria-labelledby="hero-heading">
+    <div class="absolute inset-0 bg-gray-900" aria-hidden="true">
+      <img 
+        src="/images/hero.jpg" 
+        alt="Professionelle Baustelle mit Fokus auf Qualität und Präzision" 
+        fetchpriority="high"
+        width="1920" 
+        height="1080"
+        class="w-full h-full object-cover opacity-40 mix-blend-overlay" 
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      <h1 id="hero-heading" class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-lg">
+        Wir bauen Werte.<br />
+        <span class="text-primary">Für Generationen.</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+        Ihr zertifizierter Fachbetrieb für Akustik, Fassaden und Innenausbau aus Recklinghausen. 
+        Perfektion in Ausführung, absolute Termintreue.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a 
+          href="/kontakt" 
+          class="bg-primary hover:bg-accent focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-surface px-8 py-4 rounded-md font-bold text-lg transition-all shadow-xl hover:shadow-primary/40 hover:-translate-y-1 w-full sm:w-auto min-h-[56px] flex items-center justify-center"
+        >
+          Kostenlose Beratung
+        </a>
+        <a 
+          href="/leistungen" 
+          class="bg-white/10 hover:bg-white/20 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 border-2 border-white/50 text-surface px-8 py-4 rounded-md font-bold text-lg transition-all backdrop-blur-sm w-full sm:w-auto min-h-[56px] flex items-center justify-center"
+        >
+          Unsere Leistungen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sektion 2: Trust-Bar -->
+  <section class="relative z-20 -mt-16 sm:-mt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" aria-labelledby="trust-heading">
+    <h2 id="trust-heading" class="sr-only">Unsere Stärken</h2>
+    <div class="bg-surface rounded-2xl shadow-2xl border border-gray-100 p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Item 1 -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary" aria-hidden="true">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+        <h3 class="font-bold text-secondary text-lg">Seit 2008</h3>
+        <p class="text-gray-500 text-sm mt-1">Über 15 Jahre Branchenerfahrung</p>
+      </div>
+      <!-- Item 2 -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary" aria-hidden="true">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+        </div>
+        <h3 class="font-bold text-secondary text-lg">8+ Experten</h3>
+        <p class="text-gray-500 text-sm mt-1">Qualifiziertes Fachpersonal</p>
+      </div>
+      <!-- Item 3 -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary" aria-hidden="true">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+        </div>
+        <h3 class="font-bold text-secondary text-lg">Komplettbetreuung</h3>
+        <p class="text-gray-500 text-sm mt-1">Von der Planung bis zum Abschluss</p>
+      </div>
+      <!-- Item 4 -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary" aria-hidden="true">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+        </div>
+        <h3 class="font-bold text-secondary text-lg">Großes Netzwerk</h3>
+        <p class="text-gray-500 text-sm mt-1">Architekten & Gutachter inkl.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sektion 3: Kurz-Vorstellung -->
+  <section class="py-24 bg-background overflow-hidden" aria-labelledby="about-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16">
+      <div class="lg:w-1/2 w-full relative">
+        <div class="absolute -inset-4 bg-primary/5 rounded-[40px] transform -rotate-3" aria-hidden="true"></div>
+        <img 
+          src="/images/Unternehmensvorstellung.jpg" 
+          alt="Das Team der BDA Baudesign Akustik GmbH bei der Arbeit" 
+          loading="lazy"
+          width="800"
+          height="600"
+          class="w-full aspect-[4/3] bg-gray-200 object-cover rounded-[32px] shadow-xl relative z-10" 
+        />
+      </div>
+      <div class="lg:w-1/2">
+        <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Willkommen bei BDA</span>
+        <h2 id="about-heading" class="text-4xl lg:text-5xl font-extrabold text-secondary mb-6 leading-tight">Ihr Partner für den Bau im Ruhrgebiet</h2>
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+          Gegründet in Dortmund, beheimatet in Recklinghausen – wir sind in der Region für Sie stark. Unsere Philosophie: Der Kunde steht als Mensch und Geschäftspartner immer im Mittelpunkt.
+        </p>
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+          Mit einem erfahrenen Team und einem professionellen Netzwerk aus Nachunternehmern, Architekten und Brandschutzgutachtern sichern wir die exzellente Umsetzung Ihres Bauvorhabens. Von A bis Z.
+        </p>
+        <a 
+          href="/ueber-uns" 
+          class="inline-flex items-center gap-2 font-bold text-primary hover:text-accent transition-colors group text-lg focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+        >
+          Mehr über uns erfahren
+          <svg class="w-6 h-6 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sektion 4: Leistungs-Übersicht (Grid mit BILDERN) -->
+  <section class="py-24 bg-surface border-y border-gray-100" aria-labelledby="services-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Dienstleistungen</span>
+        <h2 id="services-heading" class="text-4xl font-extrabold text-secondary mb-4">Unsere Kernkompetenzen</h2>
+        <div class="w-24 h-1.5 bg-primary mx-auto rounded-full" aria-hidden="true"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Akustik -->
+        <article class="bg-background rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/20 transition-all group overflow-hidden flex flex-col">
+          <div class="w-full h-48 sm:h-56 bg-gray-200 overflow-hidden relative">
+             <img 
+               src="/images/leistung1.jpg" 
+               alt="Professioneller Akustikbau mit modernen Deckensystemen" 
+               loading="lazy"
+               width="600"
+               height="400"
+               class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" 
+             />
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <h3 class="text-2xl font-bold text-secondary mb-3">Akustik</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed flex-1">Optimale Raumakustik und professionelle Deckensysteme für moderne Geschäfts- und Privaträume.</p>
+            <a 
+              href="/leistungen#akustik" 
+              class="text-primary font-bold inline-flex items-center gap-2 hover:text-accent transition-colors mt-auto focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+            >
+              Mehr erfahren 
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+        
+        <!-- Fassaden -->
+        <article class="bg-background rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/20 transition-all group overflow-hidden flex flex-col">
+          <div class="w-full h-48 sm:h-56 bg-gray-200 overflow-hidden relative">
+             <img 
+               src="/images/leistung2.jpg" 
+               alt="Fassadensanierung und moderne Fassadengestaltung" 
+               loading="lazy"
+               width="600"
+               height="400"
+               class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" 
+             />
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <h3 class="text-2xl font-bold text-secondary mb-3">Fassadenarbeiten</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed flex-1">Nachhaltige Fassadensanierung und -gestaltung, die Ihr Gebäude vor Witterung schützt und aufwertet.</p>
+            <a 
+              href="/leistungen#fassaden" 
+              class="text-primary font-bold inline-flex items-center gap-2 hover:text-accent transition-colors mt-auto focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+            >
+              Mehr erfahren 
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Malerarbeiten -->
+        <article class="bg-background rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/20 transition-all group overflow-hidden flex flex-col">
+          <div class="w-full h-48 sm:h-56 bg-gray-200 overflow-hidden relative">
+             <img 
+               src="/images/malerarbeiten.jpg" 
+               alt="Professionelle Malerarbeiten mit hochwertigen Anstrichen" 
+               loading="lazy"
+               width="600"
+               height="400"
+               class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" 
+             />
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <h3 class="text-2xl font-bold text-secondary mb-3">Malerarbeiten</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed flex-1">Professionelle Innen- und Außenanstriche mit hochwertigen Farben für langlebige und ästhetische Ergebnisse.</p>
+            <a 
+              href="/leistungen#malerarbeiten" 
+              class="text-primary font-bold inline-flex items-center gap-2 hover:text-accent transition-colors mt-auto focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+            >
+              Mehr erfahren 
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- WDVS -->
+        <article class="bg-background rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/20 transition-all group overflow-hidden flex flex-col">
+          <div class="w-full h-48 sm:h-56 bg-gray-200 overflow-hidden relative">
+             <img 
+               src="/images/leistung3.jpg" 
+               alt="WDVS Wärmedämmverbundsysteme für Energieeffizienz" 
+               loading="lazy"
+               width="600"
+               height="400"
+               class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" 
+             />
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <h3 class="text-2xl font-bold text-secondary mb-3">WDVS</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed flex-1">Wärmedämmverbundsysteme zur massiven Reduzierung der Energiekosten und zum Klimaschutz.</p>
+            <a 
+              href="/leistungen#wdvs" 
+              class="text-primary font-bold inline-flex items-center gap-2 hover:text-accent transition-colors mt-auto focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+            >
+              Mehr erfahren 
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Abbruch -->
+        <article class="bg-background rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/20 transition-all group overflow-hidden flex flex-col">
+          <div class="w-full h-48 sm:h-56 bg-gray-200 overflow-hidden relative">
+             <img 
+               src="/images/leistung4.jpg" 
+               alt="Professionelle Abbruch- und Entkernungsarbeiten" 
+               loading="lazy"
+               width="600"
+               height="400"
+               class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" 
+             />
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <h3 class="text-2xl font-bold text-secondary mb-3">Abbrucharbeiten</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed flex-1">Sichere, saubere und fachgerechte Entkernung sowie professioneller Rückbau von Gebäudeteilen.</p>
+            <a 
+              href="/leistungen#abbruch" 
+              class="text-primary font-bold inline-flex items-center gap-2 hover:text-accent transition-colors mt-auto focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+            >
+              Mehr erfahren 
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Galabau -->
+        <article class="bg-background rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/20 transition-all group overflow-hidden flex flex-col">
+          <div class="w-full h-48 sm:h-56 bg-gray-200 overflow-hidden relative">
+             <img 
+               src="/images/leistung5.jpg" 
+               alt="Garten- und Landschaftsbau mit Pflasterarbeiten" 
+               loading="lazy"
+               width="600"
+               height="400"
+               class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" 
+             />
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <h3 class="text-2xl font-bold text-secondary mb-3">Galabau</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed flex-1">Kreative Gestaltung von Außenanlagen, Pflasterarbeiten und repräsentative Landschaftsgestaltung.</p>
+            <a 
+              href="/leistungen#galabau" 
+              class="text-primary font-bold inline-flex items-center gap-2 hover:text-accent transition-colors mt-auto focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+            >
+              Mehr erfahren 
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Fliesen -->
+        <article class="bg-background rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/20 transition-all group overflow-hidden flex flex-col">
+          <div class="w-full h-48 sm:h-56 bg-gray-200 overflow-hidden relative">
+             <img 
+               src="/images/leistung6.jpg" 
+               alt="Präzise Fliesenarbeiten mit Großformatfliesen" 
+               loading="lazy"
+               width="600"
+               height="400"
+               class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" 
+             />
+          </div>
+          <div class="p-8 flex-1 flex col">
+            <h3 class="text-2xl font-bold text-secondary mb-3">Fliesenarbeiten</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed flex-1">Präzise Verlegung von Großformatfliesen, Naturstein und Mosaiken für Innen- und Außenbereiche.</p>
+            <a 
+              href="/leistungen#fliesen" 
+              class="text-primary font-bold inline-flex items-center gap-2 hover:text-accent transition-colors mt-auto focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+            >
+              Mehr erfahren 
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sektion 5: CTA-Banner -->
+  <section class="py-24 bg-primary text-surface relative overflow-hidden" aria-labelledby="cta-heading">
+    <div class="absolute inset-0 bg-black/10" aria-hidden="true"></div>
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 id="cta-heading" class="text-4xl md:text-5xl font-extrabold mb-8 drop-shadow-md">Planen Sie ein Projekt?<br/>Lassen Sie uns sprechen.</h2>
+      <a 
+        href="/kontakt" 
+        class="inline-block bg-surface text-primary hover:bg-gray-100 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 px-10 py-5 rounded-md font-bold text-xl transition-all shadow-xl hover:-translate-y-1 hover:shadow-2xl min-h-[56px]"
+      >
+        Jetzt Anfrage senden
+      </a>
+    </div>
+  </section>
+</Layout>

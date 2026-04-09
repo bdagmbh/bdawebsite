@@ -1,0 +1,54 @@
+---
+---
+<div 
+  id="cookie-banner" 
+  class="fixed bottom-0 left-0 right-0 bg-secondary text-surface p-6 z-[100] transform translate-y-full transition-transform duration-500 shadow-2xl"
+  role="dialog"
+  aria-modal="false"
+  aria-labelledby="cookie-title"
+  aria-describedby="cookie-desc"
+  aria-live="polite"
+>
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex-1 text-sm text-gray-300">
+      <h4 id="cookie-title" class="font-bold text-lg text-surface mb-2">Wir respektieren Ihre Privatsphäre</h4>
+      <p id="cookie-desc">
+        Wir verwenden nur technisch notwendige Cookies, um die Funktion unserer Website zu gewährleisten. 
+        Es werden keine Tracking- oder Marketing-Cookies ohne Ihre explizite Zustimmung gesetzt.
+        Weitere Informationen finden Sie in unserer <a href="/datenschutz" class="text-primary hover:underline focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded">Datenschutzerklärung</a>.
+      </p>
+    </div>
+    <div class="flex gap-4 shrink-0">
+      <button 
+        id="cookie-accept" 
+        class="bg-primary hover:bg-accent focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-surface px-6 py-3 rounded-md font-bold transition-colors min-h-[44px]"
+        type="button"
+      >
+        Verstanden & Akzeptieren
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    window.addEventListener('DOMContentLoaded', () => {
+      const banner = document.getElementById('cookie-banner');
+      const acceptBtn = document.getElementById('cookie-accept');
+      
+      if (!localStorage.getItem('cookie-accepted') && banner && acceptBtn) {
+        setTimeout(() => {
+          banner.classList.remove('translate-y-full');
+          acceptBtn.focus();
+        }, 1000);
+      }
+
+      if(acceptBtn && banner) {
+        acceptBtn.addEventListener('click', () => {
+          localStorage.setItem('cookie-accepted', 'true');
+          banner.classList.add('translate-y-full');
+        });
+      }
+    });
+  })();
+</script>

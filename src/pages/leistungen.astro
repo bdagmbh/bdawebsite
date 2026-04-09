@@ -1,0 +1,249 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Unsere Leistungen | BDA Baudesign Akustik GmbH" 
+  description="Detaillierte Übersicht unserer Fachkompetenzen: Akustik, Fassaden, WDVS, Abbruch, Galabau und Fliesenarbeiten."
+>
+  <!-- Sektion 1: Seiten-Hero -->
+  <section class="h-64 md:h-80 bg-secondary flex items-center justify-center relative overflow-hidden text-surface" aria-labelledby="hero-heading">
+    <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 id="hero-heading" class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 drop-shadow-lg">Unsere Leistungen</h1>
+      <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">Präzisionsarbeit und ganzheitliche Lösungen für Ihr Bauprojekt.</p>
+    </div>
+  </section>
+
+  <!-- Sektion 2: Detaillierte Leistungs-Blöcke (Zick-Zack Layout) -->
+  <div class="bg-background py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+      
+      <!-- Leistung 1: Akustik (Text Links, Bild Rechts) -->
+      <section id="akustik" class="flex flex-col lg:flex-row gap-12 items-center scroll-mt-28" aria-labelledby="akustik-heading">
+        <div class="lg:w-1/2 w-full lg:pr-8">
+          <div class="w-12 h-1 bg-primary mb-6" aria-hidden="true"></div>
+          <h2 id="akustik-heading" class="text-3xl md:text-4xl font-bold text-secondary mb-6">Akustikbau & Trockenbau</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Ein optimales Raumklima erfordert eine perfekte Akustik. Wir installieren hochwertige Akustikdecken und Trockenbausysteme. Diese wirken nicht nur schallabsorbierend, sondern genügen auch optisch höchsten Designansprüchen – ideal für moderne Bürogebäude und private Arbeitsbereiche.
+          </p>
+          <ul class="space-y-3 text-secondary font-medium">
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Abgehängte und fugenlose Deckensysteme</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Hocheffiziente Schallschutzwände</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Individuelle raumakustische Optimierung</li>
+          </ul>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/leistung1.jpg" 
+            alt="Moderne Akustikdecken-Installation in einem Bürogebäude" 
+            loading="lazy"
+            width="800"
+            height="450"
+            class="w-full aspect-video bg-gray-200 object-cover rounded-[32px] shadow-2xl transition-transform duration-500 hover:scale-[1.02]" 
+          />
+        </div>
+      </section>
+
+      <!-- Leistung 2: Fassaden (Bild Links, Text Rechts) -->
+      <section id="fassaden" class="flex flex-col flex-col-reverse lg:flex-row gap-12 items-center scroll-mt-28" aria-labelledby="fassaden-heading">
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/leistung2.jpg" 
+            alt="Professionelle Fassadensanierung mit hochwertigem Putzsystem" 
+            loading="lazy"
+            width="800"
+            height="450"
+            class="w-full aspect-video bg-gray-200 object-cover rounded-[32px] shadow-2xl transition-transform duration-500 hover:scale-[1.02]" 
+          />
+        </div>
+        <div class="lg:w-1/2 w-full lg:pl-8">
+          <div class="w-12 h-1 bg-primary mb-6" aria-hidden="true"></div>
+          <h2 id="fassaden-heading" class="text-3xl md:text-4xl font-bold text-secondary mb-6">Fassadenarbeiten</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Die Fassade ist die Visitenkarte Ihres Gebäudes und erster Schutzschild gegen Witterungseinflüsse. Wir übernehmen Sanierungen, Neuverputzungen und moderne Farbkonzepte, die den Wert Ihrer Immobilie steigern.
+          </p>
+          <ul class="space-y-3 text-secondary font-medium">
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Riss- & Betonsanierung</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Moderne Putzsysteme (Edelputz)</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Langfristiger Witterungsschutz</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Leistung 3: Malerarbeiten (Text Links, Bild Rechts) -->
+      <section id="malerarbeiten" class="flex flex-col lg:flex-row gap-12 items-center scroll-mt-28" aria-labelledby="malerarbeiten-heading">
+        <div class="lg:w-1/2 w-full lg:pr-8">
+          <div class="w-12 h-1 bg-primary mb-6" aria-hidden="true"></div>
+          <h2 id="malerarbeiten-heading" class="text-3xl md:text-4xl font-bold text-secondary mb-6">Malerarbeiten</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Ob frischer Anstrich für Ihre Fassade, hochwertige Innenraumgestaltung oder spezielle Beschichtungen – wir bringen Farbe in Ihr Projekt. Mit sauberer Vorarbeit, präziser Ausführung und erstklassigen Materialien sorgen wir für ein perfektes Finish.
+          </p>
+          <ul class="space-y-3 text-secondary font-medium">
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Innen- und Außenanstriche</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Fassadenbeschichtungen & Schutz</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Tapezierarbeiten & Spezialbeschichtungen</li>
+          </ul>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/malerarbeiten.jpg" 
+            alt="Professionelle Malerarbeiten mit hochwertigen Innen- und Außenanstrichen" 
+            loading="lazy"
+            width="800"
+            height="450"
+            class="w-full aspect-video bg-gray-200 object-cover rounded-[32px] shadow-2xl transition-transform duration-500 hover:scale-[1.02]" 
+          />
+        </div>
+      </section>
+
+      <!-- Leistung 4: WDVS (Bild Links, Text Rechts) -->
+      <section id="wdvs" class="flex flex-col flex-col-reverse lg:flex-row gap-12 items-center scroll-mt-28" aria-labelledby="wdvs-heading">
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/leistung3.jpg" 
+            alt="WDVS Wärmedämmung an einer Mehrfamilienhaus-Fassade" 
+            loading="lazy"
+            width="800"
+            height="450"
+            class="w-full aspect-video bg-gray-200 object-cover rounded-[32px] shadow-2xl transition-transform duration-500 hover:scale-[1.02]" 
+          />
+        </div>
+        <div class="lg:w-1/2 w-full lg:pl-8">
+          <div class="w-12 h-1 bg-primary mb-6" aria-hidden="true"></div>
+          <h2 id="wdvs-heading" class="text-3xl md:text-4xl font-bold text-secondary mb-6">Wärmedämmverbundsysteme (WDVS)</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Energieeffizienz ist das Thema der Zukunft. Wir verarbeiten zukunftssichere WDVS für maximale Dämmwerte. Senken Sie Ihre Heizkosten drastisch, schützen Sie das Klima und profitieren Sie zusätzlich vom Wertzuwachs Ihrer Immobilie.
+          </p>
+          <ul class="space-y-3 text-secondary font-medium">
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Hocheffiziente Dämmstoffe (EPS, Mineralwolle)</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Fachgerechte Dübelung & Armierung</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Entspricht Gebäudeenergiegesetz (GEG)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Leistung 5: Abbruch (Text Links, Bild Rechts) -->
+      <section id="abbruch" class="flex flex-col lg:flex-row gap-12 items-center scroll-mt-28" aria-labelledby="abbruch-heading">
+        <div class="lg:w-1/2 w-full lg:pr-8">
+          <div class="w-12 h-1 bg-primary mb-6" aria-hidden="true"></div>
+          <h2 id="wdvs-heading" class="text-3xl md:text-4xl font-bold text-secondary mb-6">Wärmedämmverbundsysteme (WDVS)</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Energieeffizienz ist das Thema der Zukunft. Wir verarbeiten zukunftssichere WDVS für maximale Dämmwerte. Senken Sie Ihre Heizkosten drastisch, schützen Sie das Klima und profitieren Sie zusätzlich vom Wertzuwachs Ihrer Immobilie.
+          </p>
+          <ul class="space-y-3 text-secondary font-medium">
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Hocheffiziente Dämmstoffe (EPS, Mineralwolle)</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Fachgerechte Dübelung & Armierung</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Entspricht Gebäudeenergiegesetz (GEG)</li>
+          </ul>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/leistung3.jpg" 
+            alt="WDVS Wärmedämmung an einer Mehrfamilienhaus-Fassade" 
+            loading="lazy"
+            width="800"
+            height="450"
+            class="w-full aspect-video bg-gray-200 object-cover rounded-[32px] shadow-2xl transition-transform duration-500 hover:scale-[1.02]" 
+          />
+        </div>
+      </section>
+
+      <!-- Leistung 4: Abbruch (Bild Links, Text Rechts) -->
+      <section id="abbruch" class="flex flex-col flex-col-reverse lg:flex-row gap-12 items-center scroll-mt-28" aria-labelledby="abbruch-heading">
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/leistung4.jpg" 
+            alt="Sichere Abbruch- und Entkernungsarbeiten" 
+            loading="lazy"
+            width="800"
+            height="450"
+            class="w-full aspect-video bg-gray-200 object-cover rounded-[32px] shadow-2xl transition-transform duration-500 hover:scale-[1.02]" 
+          />
+        </div>
+        <div class="lg:w-1/2 w-full lg:pl-8">
+          <div class="w-12 h-1 bg-primary mb-6" aria-hidden="true"></div>
+          <h2 id="abbruch-heading" class="text-3xl md:text-4xl font-bold text-secondary mb-6">Abbrucharbeiten</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Wo Neues entstehen soll, muss oft Altes weichen. Wir führen Abbruch- und Entkernungsarbeiten strukturiert, sicher und umweltbewusst aus. Dabei trennen wir fachgerecht Materialien und sorgen für die strikte Einhaltung der Entsorgungsrichtlinien.
+          </p>
+          <ul class="space-y-3 text-secondary font-medium">
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Schonende Gebäude-Entkernung</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Professioneller Teil- und Totalabbruch</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Fachgerechte Bauschutt-Entsorgung</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Leistung 5: Galabau (Text Links, Bild Rechts) -->
+      <section id="galabau" class="flex flex-col lg:flex-row gap-12 items-center scroll-mt-28" aria-labelledby="galabau-heading">
+        <div class="lg:w-1/2 w-full lg:pr-8">
+          <div class="w-12 h-1 bg-primary mb-6" aria-hidden="true"></div>
+          <h2 id="galabau-heading" class="text-3xl md:text-4xl font-bold text-secondary mb-6">Galabau (Garten- & Landschaftsbau)</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Ein repräsentatives Firmengebäude oder Wohnhaus braucht eine entsprechend hochwertige Außenanlage. Wir pflastern Auffahrten, konzeptionieren Terrassen und gestalten Außenbereiche, die optisch und funktional überzeugen.
+          </p>
+          <ul class="space-y-3 text-secondary font-medium">
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Exakte Pflasterarbeiten</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Terrassen- & Wegebau</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Erdarbeiten & Modellierung</li>
+          </ul>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/leistung5.jpg" 
+            alt="Professioneller Garten- und Landschaftsbau mit Pflasterarbeiten" 
+            loading="lazy"
+            width="800"
+            height="450"
+            class="w-full aspect-video bg-gray-200 object-cover rounded-[32px] shadow-2xl transition-transform duration-500 hover:scale-[1.02]" 
+          />
+        </div>
+      </section>
+
+      <!-- Leistung 6: Fliesenarbeiten (Bild Links, Text Rechts) -->
+      <section id="fliesen" class="flex flex-col flex-col-reverse lg:flex-row gap-12 items-center scroll-mt-28" aria-labelledby="fliesen-heading">
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/leistung6.jpg" 
+            alt="Präzise Fliesenarbeiten mit Großformatfliesen und Naturstein" 
+            loading="lazy"
+            width="800"
+            height="450"
+            class="w-full aspect-video bg-gray-200 object-cover rounded-[32px] shadow-2xl transition-transform duration-500 hover:scale-[1.02]" 
+          />
+        </div>
+        <div class="lg:w-1/2 w-full lg:pl-8">
+          <div class="w-12 h-1 bg-primary mb-6" aria-hidden="true"></div>
+          <h2 id="fliesen-heading" class="text-3xl md:text-4xl font-bold text-secondary mb-6">Fliesenarbeiten</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Ob großformatige Natursteinfliesen in der Unternehmens-Lobby oder robuste Keramik für stark beanspruchte Industrie-Flächen. Wir verlegen fachlich und maßgenau für höchste Langlebigkeit und eine edle Optik.
+          </p>
+          <ul class="space-y-3 text-secondary font-medium">
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Großformat & XXL-Fliesen</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Naturstein & Mosaik</li>
+            <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Wand- und Bodenbeläge</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Sektion 3: Netzwerk-Hinweis -->
+  <section class="py-24 bg-surface border-t border-gray-100 relative overflow-hidden" aria-labelledby="network-heading">
+    <div class="absolute inset-0 bg-primary/5 transform -skew-y-2 origin-top-right" aria-hidden="true"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h2 id="network-heading" class="text-3xl md:text-4xl font-bold text-secondary mb-6">Starke Partner für perfekte Ergebnisse</h2>
+      <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
+        Durch unsere enge Zusammenarbeit mit erfahrenen Nachunternehmern, versierten Architekten und staatlich anerkannten Brandschutzgutachtern können wir Ihnen das komplette Leistungsspektrum am Bau aus einer Hand koordinieren. Keine Reibungsverluste, nur Resultate.
+      </p>
+      <a 
+        href="/kontakt" 
+        class="inline-flex items-center gap-3 bg-secondary hover:bg-black focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 text-surface px-8 py-4 rounded-md font-bold text-lg transition-all shadow-xl hover:-translate-y-1 min-h-[56px]"
+      >
+        Kontaktieren Sie uns
+      </a>
+    </div>
+  </section>
+</Layout>

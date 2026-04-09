@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const referenzen = [
+  { 
+    src: "/images/23363a21-1816-437b-9923-5ad44016505c.jpeg", 
+    alt: "Fassadensanierung eines Gewerbegebäudes mit moderner WDVS-Dämmung in Recklinghausen"
+  },
+  { 
+    src: "/images/4670c7c2-daea-4b87-aa80-01f31deb0caf.jpeg", 
+    alt: "Abgeschlossene Akustikdecken-Installation in einem Bürogebäude"
+  },
+  { 
+    src: "/images/4a8df213-7c65-4a59-bc2b-44f444635544.jpeg", 
+    alt: "Professionelle Fassadengestaltung mit hochwertigem Putzsystem"
+  },
+  { 
+    src: "/images/64d55475-1fe2-4de7-b645-072a24cf0808.jpeg", 
+    alt: "Wärmedämmverbundsystem WDVS an einer Mehrfamilienhaus-Fassade"
+  },
+  { 
+    src: "/images/8b16bbf9-806f-4ac0-9dc3-a7630dc95995.jpeg", 
+    alt: "Präzise Fliesenarbeiten im Innenbereich mit Großformatfliesen"
+  },
+  { 
+    src: "/images/926b8ef9-fb67-45c0-b7b3-1a1259e96a81.jpeg", 
+    alt: "Entkernungsarbeiten und fachgerechter Rückbau eines Gebäudes"
+  },
+  { 
+    src: "/images/b0be2928-ab41-44c7-87b9-2c27dda1b0e7.jpeg", 
+    alt: "Garten- und Landschaftsbau mit professionellen Pflasterarbeiten"
+  },
+  { 
+    src: "/images/b0da003c-3430-4d88-9090-674efe8f9823.jpeg", 
+    alt: "Trockenbau und Akustiksysteme in einem Neubau-Projekt"
+  },
+  { 
+    src: "/images/c5415fa8-538e-4073-83da-df99d91e7732.jpeg", 
+    alt: "Fassadensanierung mit moderner Farbgestaltung und Schutzputz"
+  },
+  { 
+    src: "/images/cc95605c-bef3-44f0-8a3f-bae25357011e.jpeg", 
+    alt: "Abbrucharbeiten mit fachgerechter Entsorgung und Materialtrennung"
+  },
+  { 
+    src: "/images/ee3af767-caeb-4010-972e-12d248b07934.jpeg", 
+    alt: "Naturstein-Fliesenarbeiten in hochwertiger Ausführung"
+  },
+  { 
+    src: "/images/ee6b10d0-333b-47e9-a537-78392b9115a4.jpeg", 
+    alt: "Komplettiertes Bauprojekt mit Galabau und Außenanlagen"
+  },
+];
+---
+
+<Layout 
+  title="Referenzen | Erfolgreiche Bauprojekte der BDA" 
+  description="Lassen Sie sich von unseren erstklassig ausgeführten Referenzprojekten überzeugen. BDA Baudesign Akustik GmbH liefert Qualität, die man sieht."
+>
+  <!-- Sektion 1: Seiten-Hero -->
+  <section class="h-64 md:h-80 bg-secondary flex items-center justify-center relative overflow-hidden text-surface" aria-labelledby="hero-heading">
+    <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 id="hero-heading" class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 drop-shadow-lg">Erfolgreich umgesetzte Projekte</h1>
+      <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">Taten sprechen lauter als Worte.</p>
+    </div>
+  </section>
+
+  <!-- Sektion 2: Bilder-Galerie -->
+  <div class="bg-surface py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Pinterest-style CSS Columns / Masonry approximation -->
+      <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        
+        {referenzen.map((referenz, index) => (
+          <figure class="break-inside-avoid relative overflow-hidden rounded-2xl bg-gray-200 shadow-sm hover:shadow-xl transition-shadow cursor-pointer group">
+            <img 
+              src={referenz.src} 
+              alt={referenz.alt}
+              loading={index < 4 ? "eager" : "lazy"}
+              width="800"
+              height="600"
+              class="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-500 will-change-transform" 
+            />
+            <figcaption class="sr-only">{referenz.alt}</figcaption>
+          </figure>
+        ))}
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Testimonial Section -->
+  <section class="py-24 bg-background border-t border-gray-100" aria-labelledby="testimonial-heading">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-surface rounded-3xl p-10 md:p-16 text-center shadow-xl relative border border-gray-50">
+        <svg class="absolute top-10 w-16 h-16 text-primary/10 mx-auto inset-x-0" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2h2V8h-2zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2h2V8h-2z"/></svg>
+        <blockquote>
+          <p id="testimonial-heading" class="text-xl md:text-3xl text-secondary font-medium italic leading-relaxed z-10 relative mt-8">
+            "Wir brauchten einen zuverlässigen Partner, der alle Gewerke im Bereich Fassade und Akustik koordiniert. Die BDA Baudesign Akustik GmbH hat unser Projekt pünktlich, sauber und extrem professionell umgesetzt."
+          </p>
+        </blockquote>
+        <footer class="mt-12 flex flex-col items-center justify-center">
+          <span class="font-bold text-secondary text-lg">Ein zufriedener Bauherr</span>
+          <span class="text-sm text-primary font-medium uppercase tracking-wider mt-1">Gewerbliches Bauprojekt</span>
+        </footer>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Über BDA Baudesign Akustik | Recklinghausen" 
+  description="Erfahren Sie mehr über unsere Geschichte, unsere Werte und das Team der BDA Baudesign Akustik GmbH."
+>
+  <!-- Sektion 1: Seiten-Hero -->
+  <section class="h-64 md:h-80 bg-secondary flex items-center justify-center relative overflow-hidden text-surface" aria-labelledby="hero-heading">
+    <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 id="hero-heading" class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 drop-shadow-lg">Über BDA Baudesign Akustik</h1>
+      <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">Ihr zuverlässiger Partner am Bau – von der Planung bis zur Schlüsselübergabe.</p>
+    </div>
+  </section>
+
+  <div class="bg-background py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+      
+      <!-- Sektion 2: Unsere Geschichte (Text Links, Bild Rechts) -->
+      <section class="flex flex-col lg:flex-row gap-16 items-center" aria-labelledby="history-heading">
+        <div class="lg:w-1/2 w-full">
+          <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Historie</span>
+          <h2 id="history-heading" class="text-3xl md:text-4xl font-extrabold text-secondary mb-6 leading-tight">Vom Ruhrgebiet in die Zukunft</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Unsere Reise begann im Jahr 2008 in Dortmund. Getrieben von der Leidenschaft für präzises Handwerk und dem Anspruch an absolute Kundenzufriedenheit, haben wir uns schnell als zuverlässiger Partner im Bauwesen etabliert.
+          </p>
+          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            Im Jahr 2021 haben wir unseren Firmensitz nach Recklinghausen verlegt. Dieser Schritt markiert ein wichtiges Kapitel unseres Wachstums, von wo aus wir heute Bauprojekte im gesamten Ruhrgebiet und darüber hinaus realisieren. Wir stehen für handwerkliche Qualität, Zuverlässigkeit und eine transparente Kommunikation.
+          </p>
+          <div class="flex gap-8 mt-8 border-t border-gray-200 pt-8">
+            <div>
+              <div class="text-4xl font-black text-primary mb-1">2008</div>
+              <div class="text-sm font-medium text-secondary uppercase">Gründung in Dortmund</div>
+            </div>
+            <div>
+              <div class="text-4xl font-black text-primary mb-1">2021</div>
+              <div class="text-sm font-medium text-secondary uppercase">Sitz in Recklinghausen</div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/historie.jpg" 
+            alt="Historische Aufnahme der Firmengründung und Entwicklung" 
+            loading="lazy"
+            width="800"
+            height="600"
+            class="w-full aspect-[4/3] bg-gray-200 object-cover rounded-[32px] shadow-2xl" 
+          />
+        </div>
+      </section>
+
+      <!-- Sektion 3: Das Team (Bild Links, Text Rechts) -->
+      <section class="flex flex-col flex-col-reverse lg:flex-row gap-16 items-center" aria-labelledby="team-heading">
+        <div class="lg:w-1/2 w-full">
+          <img 
+            src="/images/unserteam.jpg" 
+            alt="Das kompetente Team der BDA Baudesign Akustik GmbH bei der Arbeit auf der Baustelle" 
+            loading="lazy"
+            width="800"
+            height="600"
+            class="w-full aspect-square md:aspect-[4/3] bg-gray-200 object-cover rounded-[32px] shadow-2xl" 
+          />
+          <p class="text-center text-sm text-gray-500 mt-4 italic">Unser starkes Team vor Ort.</p>
+        </div>
+        <div class="lg:w-1/2 w-full lg:pl-8">
+          <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Das Herzstück</span>
+          <h2 id="team-heading" class="text-3xl md:text-4xl font-extrabold text-secondary mb-6 leading-tight">Unsere Mitarbeiter</h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Unter der Führung von Inhaber Ilir Idrizi arbeitet ein engagiertes Team von 8 hochqualifizierten Mitarbeitenden. Wir sind stolz darauf, erfahrene Facharbeiter aus allen relevanten Gewerken in unseren Reihen zu haben.
+          </p>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Ergänzt wird unsere Kernmannschaft durch einen sehr erfahrenen, permanenten Bauleiter, der die reibungslose Koordination auf der Baustelle sicherstellt. Nur durch dieses starke Teamwork können wir die hervorragende Qualität unserer Arbeit konstant garantieren.
+          </p>
+          <ul class="space-y-4 text-secondary font-medium">
+            <li class="flex items-start gap-4 p-4 bg-surface rounded-xl border border-gray-100 shadow-sm">
+              <div class="bg-primary/10 p-2 rounded-lg text-primary whitespace-nowrap" aria-hidden="true"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div>
+              <div>Inhaber Ilir Idrizi an der Spitze</div>
+            </li>
+            <li class="flex items-start gap-4 p-4 bg-surface rounded-xl border border-gray-100 shadow-sm">
+               <div class="bg-primary/10 p-2 rounded-lg text-primary whitespace-nowrap" aria-hidden="true"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></div>
+              <div>8 qualifizierte Fachmitarbeiter</div>
+            </li>
+            <li class="flex items-start gap-4 p-4 bg-surface rounded-xl border border-gray-100 shadow-sm">
+               <div class="bg-primary/10 p-2 rounded-lg text-primary whitespace-nowrap" aria-hidden="true"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg></div>
+              <div>1 eigener, erfahrener Bauleiter</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Sektion 4: Unsere Werte (3 Spalten) -->
+      <section class="border-t border-gray-200 pt-24 text-center" aria-labelledby="values-heading">
+        <h2 id="values-heading" class="text-3xl md:text-4xl font-extrabold text-secondary mb-16">Die BDA Philosophie</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+          
+          <!-- Wert 1 -->
+          <div class="flex flex-col items-center">
+            <div class="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-surface mb-6 shadow-lg shadow-primary/30 transform rotate-3" aria-hidden="true">
+              <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-secondary mb-3">Maximale Qualität</h3>
+            <p class="text-gray-600 leading-relaxed">Wir verwenden ausschließlich hochwertige Materialien und achten penibel auf eine fachgerechte, langlebige Ausführung aller Gewerke.</p>
+          </div>
+
+          <!-- Wert 2 -->
+          <div class="flex flex-col items-center">
+            <div class="w-20 h-20 bg-secondary rounded-2xl flex items-center justify-center text-surface mb-6 shadow-lg transform -rotate-3" aria-hidden="true">
+              <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-secondary mb-3">Absolute Zuverlässigkeit</h3>
+            <p class="text-gray-600 leading-relaxed">Termintreue ist unser oberstes Gebot. Einmal gemachte Zusagen halten wir ein. Ohne Ausreden, ohne versteckte Kosten.</p>
+          </div>
+
+          <!-- Wert 3 -->
+          <div class="flex flex-col items-center">
+            <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 shadow-lg border border-primary/20 transform rotate-3" aria-hidden="true">
+              <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-secondary mb-3">Kunden im Fokus</h3>
+            <p class="text-gray-600 leading-relaxed">Der Kunde steht als Mensch und Geschäftspartner im Mittelpunkt. Ihre Zufriedenheit ist der Maßstab unserer harten Arbeit.</p>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+</Layout>
