@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const WEB3FORMS_ACCESS_KEY = "37e82d64-cdce-4088-bfcb-4d94297ed9c0";
+const WEB3FORMS_ACCESS_KEY = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || "37e82d64-cdce-4088-bfcb-4d94297ed9c0";
 ---
 
 <Layout 
@@ -73,7 +73,7 @@ const WEB3FORMS_ACCESS_KEY = "37e82d64-cdce-4088-bfcb-4d94297ed9c0";
             </div>
 
             <!-- Google Maps -->
-            <div class="w-full aspect-[21/9] bg-gray-200 border border-gray-300 rounded-2xl flex items-center justify-center relative overflow-hidden shadow-inner mt-8">
+            <div class="w-full aspect-[21/9] min-h-[200px] bg-gray-200 border border-gray-300 rounded-2xl flex items-center justify-center relative overflow-hidden shadow-inner mt-8">
               <iframe 
                 title="Standort BDA Baudesign Akustik GmbH auf Google Maps"
                 width="100%" 
